@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @deal_group %>
+
+<div>
+  <%= link_to "Edit this deal group", edit_deal_group_path(@deal_group) %> |
+  <%= link_to "Back to deal groups", deal_groups_path %>
+
+  <%= button_to "Destroy this deal group", @deal_group, method: :delete %>
+</div>
