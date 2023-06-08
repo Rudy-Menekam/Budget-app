@@ -1,6 +1,13 @@
-<p style="color: green"><%= notice %></p>
+<%= render partial: 'shared/header_bar', locals: {title:'TRANSACTION', symbol:'←', url: :back}%>
 
-<h1>Groups</h1>
+<%# <p style="color: green"><%= notice %>
+<%# </p> %>
+
+<div>
+<h2 class=""><%=  @groups.name %></h2>
+<%# <p class="amount"> $<%= @groups.@deals.sum(:amount) %> 
+<%# </p>  %>
+</div>
 
 <div id="groups">
   <% @groups.each do |group| %>

@@ -13,3 +13,114 @@
  *= require_tree .
  *= require_self
  */
+ * {
+    margin: 0;
+ }
+
+.splash-screen {
+    height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 63%;
+}
+
+.title {
+    padding: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1c222b;
+    padding-top: 60%;
+}
+
+.splash-button {
+    display: grid;
+    gap: 25px;
+    padding-top: 50%;
+}
+
+#experience-login {
+    padding: 14px;
+    font-size: 20px;
+    background: #3877c2;
+    border: none;
+    color: white;
+}
+
+#experience-login a {
+    text-decoration: none;
+    color: white;
+}
+
+#experience-signup {
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+}
+
+#experience-signup a {
+    text-decoration: none;
+    color: grey;
+}
+
+.login-header {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    color: white;
+    padding: 8px;
+    background: #3877c2;
+    height: 7vh;
+}
+
+.login-header a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 29px;
+}
+
+.actions-in input{
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: gainsboro;
+}
+
+.field input {
+    width: 94%;
+    padding: 18px;
+    border: 0.1px solid;
+    border-color: gainsboro;
+}
+
+.navbar {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    color: white;
+    padding: 8px;
+    background: #3877c2;
+    height: 7vh;
+}
+
+.arrow-link a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 29px;
+}
+
+.logout button{
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: gainsboro; 
+}
