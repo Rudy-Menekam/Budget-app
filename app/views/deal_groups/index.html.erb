@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Deal groups</h1>
+
+<div id="deal_groups">
+  <% @deal_groups.each do |deal_group| %>
+    <%= render deal_group %>
+    <p>
+      <%= link_to "Show this deal group", deal_group %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New deal group", new_deal_group_path %>
