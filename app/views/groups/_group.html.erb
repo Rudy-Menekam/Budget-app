@@ -1,17 +1,10 @@
 <div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
+<p><%= image_tag group.icon, class: 'category_icon' %></p>
+ <div id="info"> 
+  <%= link_to group_path(group.id) do %>
+          <h3 class='category_name'><%= group.name %></h3>
+        <% end %>
+  <p><%= group.created_at%></p>
+</div>
+<p>$200</p>
 </div>
