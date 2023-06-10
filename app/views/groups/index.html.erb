@@ -1,0 +1,11 @@
+<%= render partial: 'shared/header_bar', locals: {title:'CATEGORY', symbol:':::', url: :back}%>
+
+<div id="groups">
+    <% @groups.each do |group| %>
+    <% if can? :read, group %>
+      <%= render partial: 'group', locals: { group: group } %>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="card-button"><button><%= link_to "Add new category", new_group_path %></button></div>

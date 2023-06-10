@@ -1,0 +1,24 @@
+<%# <%= render @group %>
+<div class="details-header">
+ <p >
+    <%= link_to '←',groups_path, class: 'arrow-link' %>
+</p>
+<h2>Details</h2>
+</div>
+<div class="details">
+<div id="details_info">
+<p><%= image_tag @group.icon, class: 'category_icon' %></p>
+<h3 class='category_name'><%= @group.name %></h3>
+</div>
+<hr>
+<p id="date"><%= @group.created_at%></p>
+<hr>
+<div id="amount">
+<p>Total Payment</p>
+<p>$200</p>
+</div>
+</div>
+<div>
+  
+  <%= link_to "Add new deal", new_group_deal_path(group_id: @group.id) %>
+</div>

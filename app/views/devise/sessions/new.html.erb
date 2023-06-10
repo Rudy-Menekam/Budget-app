@@ -1,0 +1,20 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="login-header">
+ <p >
+    <%= link_to '←',  unauthenticated_root_path, class: 'arrow-link' %>
+</p>
+<h2>Log in</h2>
+<div class="actions-in">
+    <%= f.submit "Log in" %>
+  </div>
+</div>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+  </div>
+
+<% end %>
+

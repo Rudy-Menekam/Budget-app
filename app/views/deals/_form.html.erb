@@ -1,0 +1,28 @@
+<%= form_with model: @deal, url: group_deals_path(controller: :deals, action: :create, group_id: @group.id), method: :post do |form| %>
+<% if deal.errors.any? %>
+<div style="color: red">
+<h2><%= pluralize(deal.errors.count, "error") %> prohibited this deal from being saved:</h2>
+<ul>
+<% deal.errors.each do |error| %>
+<li><%= error.full_message %></li>
+<% end %>
+</ul>
+</div>
+<% end %>
+<div class="form_field">
+<%= form.label :name, style: "display: block" %>
+<%= form.text_field :name, required: true %>
+</div>
+<div class="form_field">
+<%= form.label :amount, style: "display: block" %>
+<%= form.text_field :amount, required: true %>
+</div>
+<div  class="form_field">
+<%= form.label :group, style: "display: block" %>
+<%= form.collection_select :group_id, Group.all, :id, :name, { include_blank: 'Select Group', selected: @group.id }, required: true %>
+</div>
+<div class="form_field_button">
+<%= form.submit %>
+</div>
+<% end %>
+
