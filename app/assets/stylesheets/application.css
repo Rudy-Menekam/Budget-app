@@ -145,11 +145,11 @@ body {
   width: 100px;
 }
 
-#group_1 img {
+.info_card img {
   width: 75px;
 }
 
-#group_1 {
+.info_card {
   display: flex;
   justify-content: space-between;
   background: white;
@@ -158,6 +158,8 @@ body {
 
 #groups {
   margin: 8px;
+  display: grid;
+  gap: 10px;
 }
 
 #info {
@@ -166,7 +168,10 @@ body {
 
 .card-button {
   display: flex;
-  margin-top: 135%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   align-items: center;
   align-content: center;
   align-self: center;
@@ -180,7 +185,7 @@ body {
   align-items: center;
   background: #52af0f;
   height: 6vh;
-  width: 99%;
+  width: 96%;
   border: none;
   border: 0.5px solid;
   border-color: white;
@@ -218,4 +223,41 @@ body {
   padding: 8px;
   background: #3877c2;
   height: 7vh;
+}
+
+#deals {
+  margin: 8px;
+  display: grid;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.total_box {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  height: 30px;
+  align-items: center;
+  padding: 10px;
+}
+
+.form_field input {
+  width: 91%;
+  padding: 18px;
+  border: 0.1px solid;
+  border-color: gainsboro;
+  background: white;
+}
+
+.form_field_button input {
+  font-size: 18px;
+  background: #52af0f;
+  height: 6vh;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+.form_field_button {
+  padding-top: 30px;
 }
