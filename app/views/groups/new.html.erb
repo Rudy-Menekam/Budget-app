@@ -1,9 +1,11 @@
-<h1>New group</h1>
+<div class="details-header">
+ <p >
+    <%= link_to '←', groups_path, class: 'arrow-link' %>
+</p>
+<h2>New Category</h2>
+</div>
 
 <%= render "form", group: @group %>
 
 <br>
 
-<div>
-  <%= link_to "Back to groups", groups_path %>
-</div>

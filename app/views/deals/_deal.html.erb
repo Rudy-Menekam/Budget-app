@@ -1,12 +1,14 @@
-<div id="<%= dom_id deal %>">
+<div class= "info_card"  id="<%= dom_id deal %>">
+ <div class="name">
+        <p>  
+          <%= deal.name %>
+        </p>
+        <small class='text-secondary'>
+          <%= deal.created_at.strftime("%d %h %Y")%> at <%=deal.created_at.strftime("%l.%M%P")%>
+        </small>
+      </div>
   <p>
-    <strong>Name:</strong>
-    <%= deal.name %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= deal.amount %>
+    $<%= deal.amount %>
   </p>
 
 </div>

@@ -1,21 +1,20 @@
-<%= render partial: 'shared/header_bar', locals: {title:'TRANSACTION', symbol:'←', url: :back}%>
+<%= render partial: 'shared/header_bar', locals: {title:'CATEGORY', symbol:':::', url: :back}%>
 
 <%# <p style="color: green"><%= notice %>
 <%# </p> %>
 
-<div>
-<h2 class=""><%=  @groups.name %></h2>
+<%# <div>
+<%# <h2 class=""><%=  @groups.name %>
+<%# </h2> %>
 <%# <p class="amount"> $<%= @groups.@deals.sum(:amount) %> 
 <%# </p>  %>
-</div>
+<%# </div> %>
 
 <div id="groups">
   <% @groups.each do |group| %>
     <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New group", new_group_path %>
+<%# <%= link_to "New group", new_group_path %>
+<div class="card-button"><button><%= link_to "Add new category", new_group_path %></button></div>

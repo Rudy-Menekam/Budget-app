@@ -11,22 +11,17 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="form_field">
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
-  <div>
+  <div class="form_field">
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+    <%= form.file_field :icon %>
   </div>
 
-  <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
-  </div>
-
-  <div>
+  <div class="form_field_button">
     <%= form.submit %>
   </div>
 <% end %>

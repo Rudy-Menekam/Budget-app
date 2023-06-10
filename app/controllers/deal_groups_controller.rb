@@ -17,6 +17,18 @@ class DealGroupsController < ApplicationController
   # GET /deal_groups/1/edit
   def edit; end
 
+  # def new_deal_group
+  #   @deal_group = DealGroup.new
+  #   # Set the title of the page
+  #   @title = "New Deal Group"
+  #   respond_to do |format|
+  #     format.html do
+  #       # Render the new deal form
+  #       render :new
+  #     end
+  #   end
+  # end
+
   # POST /deal_groups or /deal_groups.json
   def create
     @deal_group = DealGroup.new(deal_group_params)

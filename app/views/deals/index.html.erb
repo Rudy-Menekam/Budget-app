@@ -1,14 +1,19 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Deals</h1>
-
+<div class="details-header">
+ <p >
+    <%= link_to '←',groups_path, class: 'arrow-link' %>
+</p>
+<h2>Deals</h2>
+</div>
+<div class="total_box">
+<p>
+<span>Total payment:</span>
+</p>
+<span class='font-weight-bold'>$<%= @deals.sum {|deal| deal.amount} %></span>
+</div>
 <div id="deals">
   <% @deals.each do |deal| %>
     <%= render deal %>
-    <p>
-      <%= link_to "Show this deal", deal %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New deal", new_deal_path %>
+<div class="card-button"><button><%= link_to "New deal", new_group_deal_path %></button></div>

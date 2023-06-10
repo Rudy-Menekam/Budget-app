@@ -1,17 +1,10 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
+<div class="info_card" id="<%= dom_id group %>">
+<p><%= image_tag group.icon, class: 'category_icon' %></p>
+ <div id="info"> 
+ <p>
+    <%= link_to(group.name, group_deals_path(group.id), class: 'category_name') %>
   </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
+   <p><%= group.created_at.strftime("%d %b %Y")%></p>
+</div>
+<p>$<%= @deals.sum {|deal| deal.amount} %></p>
 </div>

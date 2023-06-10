@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :deal_groups
-  resources :deals
-  resources :groups
+  resources :groups do
+   resources :deals 
+  end
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
