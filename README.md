@@ -68,13 +68,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://budget-app-faad.onrender.com)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- VIDEO  PRESENTATION -->
 
 ## 🚀 Video presentation <a name="video-demo"></a>
 
-- [Video Link]()
+- [Video Link](https://www.loom.com/share/5a66a818e25643fc965d4a804dd8e2fc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
