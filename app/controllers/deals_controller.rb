@@ -19,7 +19,7 @@ class DealsController < ApplicationController
     if @deal.save
       DealGroup.create(group_id: @group.id, deal_id: @deal.id)
       flash[:notice] = 'Deal was successfully created.'
-      redirect_to deal_group_path(@group)
+      redirect_to group_deals_path(@group)
     else
       flash[:alert] = 'Deal could not be created.'
       render :new

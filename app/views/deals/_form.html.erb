@@ -22,7 +22,7 @@
 <%= form.collection_select :group_id, Group.all, :id, :name, { include_blank: 'Select Group', selected: @group.id }, required: true %>
 </div>
 <div class="form_field_button">
-<%= form.submit value: "Create Deal", method: :post %>
+<%= form.submit %>
 </div>
 <% end %>
 
