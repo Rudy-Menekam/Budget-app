@@ -1,4 +1,4 @@
-<%= form_with(model: deal_group) do |form| %>
+<%= form_with model: @deal_group do |form| %>
   <% if deal_group.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(deal_group.errors.count, "error") %> prohibited this deal_group from being saved:</h2>

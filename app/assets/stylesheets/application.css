@@ -249,6 +249,14 @@ body {
   background: white;
 }
 
+.form_field select {
+  width: 100%;
+  padding: 18px;
+  border: 0.1px solid;
+  border-color: gainsboro;
+  background: white;
+}
+
 .form_field_button input {
   font-size: 18px;
   background: #52af0f;
